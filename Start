@@ -9,3 +9,39 @@ class Program
         Console.WriteLine("Random Number: " + randomNumber);
     }
 }
+using System;
+
+public class LongFunctionExample
+{
+    public static void Main(string[] args)
+    {
+        // Call the long function
+        LongFunction();
+    }
+
+    public static void LongFunction()
+    {
+        // This is a long function with multiple steps and operations
+
+        // Step 1: Initialize variables
+        int totalIterations = 1000000;
+        int sum = 0;
+
+        // Step 2: Perform a loop operation
+        for (int i = 0; i < totalIterations; i++)
+        {
+            // Step 3: Perform some computation
+            sum += i * 2;
+
+            // Step 4: Check for a condition
+            if (i % 1000 == 0)
+            {
+                // Step 5: Print progress
+                Console.WriteLine("Progress: " + ((float)i / totalIterations * 100).ToString("0.00") + "%");
+            }
+        }
+
+        // Step 6: Print the result
+        Console.WriteLine("Sum of even numbers from 0 to " + totalIterations + ": " + sum);
+    }
+}
