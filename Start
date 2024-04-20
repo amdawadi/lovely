@@ -45,3 +45,6 @@ public class LongFunctionExample
         Console.WriteLine("Sum of even numbers from 0 to " + totalIterations + ": " + sum);
     }
 }
+
+*Crash//
+
